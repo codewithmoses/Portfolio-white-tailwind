@@ -19,7 +19,7 @@ The key sections include:
 1. **Download the Repository**:
    Clone or download the repository to your local machine:
    ```bash
-   git clone https://github.com/YourRepo/MossOniPortfolio.git
+   git clone https://github.com/codewithmoses/Portfolio-white-tailwind.git
    ```
 
 2. **File Structure**:
