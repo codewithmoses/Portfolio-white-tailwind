@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Moses Oluwadamilare Oni">
+    
+    <!-- Title Tag -->
+    <title>Moses Oluwadamilare Oni - Full-Stack Web Developer Portfolio</title>
+    
+    <!-- Description -->
+    <meta name="description" content="Moses Oluwadamilare Oni is a full-stack web developer specializing in clean and minimalistic websites. Explore my portfolio to see my work in web development, graphic design, and Human-Computer Interaction.">
+    
+    <!-- Keywords -->
+    <meta name="keywords" content="full-stack developer, web developer, portfolio, web design, graphic design, Human-Computer Interaction, software development, Moses Oluwadamilare Oni">
+    
+    <!-- Open Graph Meta Tags (for social media sharing) -->
+    <meta property="og:title" content="Moses Oluwadamilare Oni - Full-Stack Web Developer Portfolio">
+    <meta property="og:description" content="Explore the portfolio of Moses Oluwadamilare Oni, a full-stack web developer with expertise in creating clean and minimalistic websites.">
+    <meta property="og:image" content="img/og-image.jpg"> <!-- Replace with the path to your Open Graph image -->
+    <meta property="og:url" content="https://your-portfolio-website.com"> <!-- Replace with your portfolio URL -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Moses Oluwadamilare Oni Portfolio">
+    
+  <!-- Favicon link -->
+<link rel="shortcut icon" href="img/favicon.svg" type="image/svg+xml" />
+
+    <!-- DevIcon CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- Google Merriweather & Inconsolata Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Tailwind TW Element CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/css/tw-elements.min.css" />
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          fontFamily: {
+            merri: ["Merriweather", "serif"],
+            mono: ["Inconsolata", "monospace"],
+          },
+        },
+        corePlugins: {
+          preflight: false,
+        },
+      };
+    </script>
+  </head>
+  <body class="font-mono">
+    <!-- Header-|- Navbar serction -->
+    <header>
+      <nav class="bg-white text-black border-zinc-200 px-4 lg:px-6 py-2.5 dark:bg-black dark:text-white">
+        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+          <a href="https://flowbite.com" class="flex items-center">
+            <img src="img/logo-b.svg" class="mr-3 h-8 sm:h-9" alt="Flowbite Logo" />
+          </a>
+          <div class="flex items-center lg:order-2">
+            <!-- Resume Button (unchanged) -->
+            <a href="#" class="inline-block rounded bg-black px-6 pb-2 pt-2.5 text-xs font-medium leading-normal text-white shadow-light-3 transition duration-150 ease-in-out hover:bg-black/90 hover:shadow-light-2 focus:bg-black/90 focus:shadow-light-2 focus:outline-none focus:ring-0 active:bg-black/90 active:shadow-light-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong">
+              <i class="fa-solid fa-cloud-arrow-down mr-2"></i> Resume </a>
+            <a href="/" class=" ml-4 text-zinc-600 transition-colors duration-300 hover:text-black">
+              <i class="fab fa-youtube text-xl"></i>
+            </a>
+            <!-- Hamburger menu button -->
+            <button data-collapse-toggle="mobile-menu-2" type="button" class="ml-2 inline-flex items-center p-1 ml-1 text-sm rounded lg:hidden hover:bg-zinc-50 focus:outline-none focus:ring-2 focus:ring-zinc-700 dark:hover:bg-zinc-700 dark:focus:ring-zinc-100">
+              <span class="sr-only">Open main menu</span>
+              <img src="img/CLose-Muen.svg" alt="CLose-Menu" id="close-menu" class="hidden w-6 h-6 p-[4px]" />
+              <img src="img/Hamburger-Menu.svg" alt="Open-Menu" id="open-menu" class="w-6 h-6" />
+            </button>
+          </div>
+          <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+            <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+              <li>
+                <a href="#" class="block py-2 pr-4 pl-3 text-black hover:text-zinc-700 dark:text-white dark:hover:text-zinc-700">Home</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pr-4 pl-3 text-black hover:text-zinc-700 dark:text-white dark:hover:text-zinc-700">Company</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pr-4 pl-3 text-black hover:text-zinc-700 dark:text-white dark:hover:text-zinc-700">Marketplace</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pr-4 pl-3 text-black hover:text-zinc-700 dark:text-white dark:hover:text-zinc-700">Features</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pr-4 pl-3 text-black hover:text-zinc-700 dark:text-white dark:hover:text-zinc-700">Team</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pr-4 pl-3 text-black hover:text-zinc-700 dark:text-white dark:hover:text-zinc-700">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header-|- Navbar serction Ends -->
+    <!-- Site Content | Hero Section -->
+    <section class="bg-white">
+      <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 lg:py-24">
+        <div class="flex flex-wrap items-center mx-auto max-w-7xl">
+          <div class="w-full lg:max-w-lg lg:w-1/2 rounded-xl">
+            <div>
+              <div class="relative w-full max-w-lg">
+                <div class="absolute top-0 rounded-full bg-zinc-300 -left-4 w-72 h-72 mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+                <div class="absolute rounded-full bg-zinc-300 -bottom-24 right-20 w-72 h-72 mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+                <div class="relative">
+                  <img class="object-cover object-center mx-auto rounded-lg shadow-2xl" alt="hero" src="https://images.pexels.com/photos/3031397/pexels-photo-3031397.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-start mt-12 mb-16 text-left lg:flex-grow lg:w-1/2 lg:pl-6 xl:pl-24 md:mb-0 xl:mt-0">
+            <span class="mb-2 ml-3 text-xs font-bold tracking-widest text-zinc-600">Hello, I'm</span>
+            <a href="#">
+              <img class="w-auto h-12" src="img/logo-b.svg" alt="">
+            </a>
+            <h1 class="mb-8 text-4xl font-bold leading-none tracking-tighter text-zinc-800 md:text-7xl lg:text-5xl font-merri">Crafting Clean & Minimal Websites</h1>
+            <p class="mb-8 text-base leading-relaxed text-gray-500">I specialize in building intuitive, responsive websites for a wide range of users. From frontend elegance to backend logic, I create seamless web experiences.</p>
+            <div class="space-y-8">
+              <!-- Frontend -->
+              <div>
+                <h6 class="mb-2 font-semibold leading-5 text-black font-merri">Frontend Technologies:</h6>
+                <p class="mb-3 text-sm text-black">Crafting elegant and responsive interfaces.</p>
+                <ul class="flex space-x-4">
+                  <li>
+                    <i class="devicon-html5-plain-wordmark text-zinc-800 text-[40px]"></i>
+                  </li>
+                  <li>
+                    <i class="devicon-css3-plain-wordmark text-zinc-800 text-[40px]"></i>
+                  </li>
+                  <li>
+                    <i class="devicon-tailwindcss-original text-zinc-800 text-[40px]"></i>
+                  </li>
+                  <li>
+                    <i class="devicon-nextjs-plain text-zinc-800 text-[40px]"></i>
+                  </li>
+                </ul>
+              </div>
+              <!-- Backend -->
+              <div>
+                <h6 class="mb-2 font-semibold leading-5 text-black font-merri">Backend Technologies:</h6>
+                <p class="mb-3 text-sm text-black">Powering server-side logic and database management.</p>
+                <ul class="flex space-x-4">
+                  <li>
+                    <i class="devicon-mariadb-original-wordmark text-zinc-800 text-[40px]"></i>
+                  </li>
+                  <li>
+                    <i class="devicon-mongodb-plain-wordmark text-zinc-800 text-[40px]"></i>
+                  </li>
+                  <li>
+                    <i class="devicon-mysql-plain-wordmark text-zinc-800 text-[40px]"></i>
+                  </li>
+                  <li>
+                    <i class="devicon-php-plain text-zinc-800 text-[40px]"></i>
+                  </li>
+                </ul>
+              </div>
+              <!-- Software -->
+              <div>
+                <h6 class="mb-2 font-semibold leading-5 text-black font-merri">Software Tools:</h6>
+                <p class="mb-3 text-sm text-black">Essential tools for development and design.</p>
+                <ul class="flex space-x-4">
+                  <li>
+                    <i class="devicon-npm-original-wordmark text-zinc-800 text-[40px]"></i>
+                  </li>
+                  <li>
+                    <i class="devicon-visualstudio-plain text-zinc-800 text-[40px]"></i>
+                  </li>
+                  <li>
+                    <i class="devicon-figma-plain text-zinc-800 text-[40px]"></i>
+                  </li>
+                  <li>
+                    <i class="devicon-illustrator-plain text-zinc-800 text-[40px]"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="flex justify-center mt-4">
+              <a href="" class="inline-block rounded bg-black px-6 pb-2 pt-2.5 text-xs font-medium leading-normal text-white shadow-light-3 transition duration-150 ease-in-out hover:bg-black/90 hover:shadow-light-2 focus:bg-black/90 focus:shadow-light-2 focus:outline-none focus:ring-0 active:bg-black/90 active:shadow-light-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong">
+                <i class="fa-solid fa-cloud-arrow-down mr-2"></i> Resume </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Site Content | Hero Section Ends -->
+    <!-- Site Content | About section -->
+    <section class="bg-white">
+      <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 bg-white">
+        <div class="grid gap-4 lg:grid-cols-2">
+          <div class="lg:pr-10">
+            <a href="/" aria-label="Go Home" title="Logo" class="inline-block mb-5">
+              <div class="flex items-center justify-center w-12 h-12 rounded-full bg-zinc-100">
+                <img src="img/User.svg" alt="" />
+              </div>
+            </a>
+            <h5 class="mb-4 text-4xl font-semibold leading-none text-zinc-900 font-merri"> Creating seamless digital <br class="hidden md:block" /> experiences with <span class="inline-block text-zinc-700">precision and creativity</span>
+            </h5>
+            <p class="mb-6 text-base text-gray-500"> Hi, I'm Moses Oni, a full-stack web developer and creative designer with a passion for Human-Computer Interaction. With a strong foundation in web technologies (HTML/CSS, PHP, SQL) and a flair for graphic design (Adobe Illustrator, Photoshop), I specialize in creating clean, intuitive, and visually engaging user experiences. Whether it's developing event management systems like <strong>EventSphere</strong> or crafting custom UI/UX designs, I thrive on turning complex problems into elegant solutions. Let's bring your ideas to life with a blend of creativity and technology! </p>
+            <hr class="mb-5 border-zinc-300" />
+            <div class="flex items-center space-x-4">
+              <a href="/" class="text-zinc-600 transition-colors duration-300 hover:text-black">
+                <i class="fab fa-twitter text-xl"></i>
+              </a>
+              <a href="/" class="text-zinc-600 transition-colors duration-300 hover:text-black">
+                <i class="fab fa-instagram text-xl"></i>
+              </a>
+              <a href="/" class="text-zinc-600 transition-colors duration-300 hover:text-black">
+                <i class="fab fa-facebook text-xl"></i>
+              </a>
+              <a href="/" class="text-zinc-600 transition-colors duration-300 hover:text-black">
+                <i class="fab fa-youtube text-xl"></i>
+              </a>
+            </div>
+          </div>
+          <div class="flex items-center justify-center -mx-4 lg:pl-8">
+            <div class="flex flex-col items-end px-3">
+              <img class="object-cover mb-6 rounded shadow-lg h-28 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56" src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="" />
+              <img class="object-cover w-20 h-20 rounded shadow-lg sm:h-32 xl:h-40 sm:w-32 xl:w-40" src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="" />
+            </div>
+            <div class="px-3">
+              <img class="object-cover w-40 h-40 rounded shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80" src="https://images.pexels.com/photos/3182739/pexels-photo-3182739.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Site Content | About section Ends -->
+    <!-- Site Content | Services section  -->
+    <section class="bg-white" id="services">
+      <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div class="flex flex-col mb-6 lg:flex-row md:mb-10">
+          <div class="lg:w-1/2">
+            <h2 class="max-w-md mb-6 font-semibold text-4xl text-zinc-900 font-merri">
+              <div class="flex items-center justify-center w-12 h-12 rounded-full bg-zinc-200">
+                <img src="img/Service.svg" alt="Project Icon" />
+              </div> Transforming Ideas into Digital Realities
+            </h2>
+          </div>
+          <div class="lg:w-1/2">
+            <p class="text-base text-gray-500"> With a passion for clean and minimal design, I leverage my expertise to create impactful and user-friendly digital experiences. Let’s turn your vision into reality. </p>
+          </div>
+        </div>
+        <div class="grid gap-8 row-gap-10 sm:grid-cols-2 lg:grid-cols-4">
+          <div>
+            <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-zinc-100">
+              <img src="img/intuitive.svg" alt="Innovative Design" class="w-7 h-7 text-black" />
+            </div>
+            <h6 class="mb-2 text-base text-black font-merri">Innovative Design</h6>
+            <p class="mb-3 text-base text-gray-500"> Crafting visually stunning and user-centric designs that engage and inspire. </p>
+            <ul class="mb-4 -ml-1 space-y-2">
+              <li class="text-sm text-black flex items-start">
+                <span class="mr-1 text-black">
+                  <i class="fa-solid fa-check"></i>
+                </span> User Experience
+              </li>
+              <li class="text-sm text-black flex items-start">
+                <span class="mr-1 text-black">
+                  <i class="fa-solid fa-check"></i>
+                </span> Aesthetics
+              </li>
+              <li class="text-sm text-black flex items-start">
+                <span class="mr-1 text-black">
+                  <i class="fa-solid fa-check"></i>
+                </span> Brand Identity
+              </li>
+            </ul>
+            <a href="/portfolio" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-black hover:text-zinc-800"> Explore My Work </a>
+          </div>
+          <div>
+            <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-zinc-100">
+              <img src="img/webdev.svg" alt="Web Development" class="w-7 h-7 text-black" />
+            </div>
+            <h6 class="mb-2 text-base text-black font-merri">Web Development</h6>
+            <p class="mb-3 text-base text-gray-500"> Bringing designs to life with clean, efficient code and cutting-edge technologies. </p>
+            <ul class="mb-4 -ml-1 space-y-2">
+              <li class="text-sm text-black flex items-start">
+                <span class="mr-1 text-black">
+                  <i class="fa-solid fa-check"></i>
+                </span> HTML/CSS
+              </li>
+              <li class="text-sm text-black flex items-start">
+                <span class="mr-1 text-black">
+                  <i class="fa-solid fa-check"></i>
+                </span> JavaScript
+              </li>
+              <li class="text-sm text-black flex items-start">
+                <span class="mr-1 text-black">
+                  <i class="fa-solid fa-check"></i>
+                </span> PHP & SQL
+              </li>
+            </ul>
+            <a href="/services" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-black hover:text-zinc-800"> Discover Our Services </a>
+          </div>
+          <div>
+            <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-zinc-100">
+              <img src="img/graphic.svg" alt="Graphic Design" class="w-7 h-7 text-black" />
+            </div>
+            <h6 class="mb-2 text-base text-black font-merri">Graphic Design</h6>
+            <p class="mb-3 text-base text-gray-500"> Elevating your brand with striking visuals and captivating design elements. </p>
+            <ul class="mb-4 -ml-1 space-y-2">
+              <li class="text-sm text-black flex items-start">
+                <span class="mr-1 text-black">
+                  <i class="fa-solid fa-check"></i>
+                </span> Adobe Illustrator
+              </li>
+              <li class="text-sm text-black flex items-start">
+                <span class="mr-1 text-black">
+                  <i class="fa-solid fa-check"></i>
+                </span> Adobe Photoshop
+              </li>
+              <li class="text-sm text-black flex items-start">
+                <span class="mr-1 text-black">
+                  <i class="fa-solid fa-check"></i>
+                </span> Creative Solutions
+              </li>
+            </ul>
+            <a href="/design" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-black hover:text-zinc-800"> View Our Designs </a>
+          </div>
+          <div>
+            <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-zinc-100">
+              <img src="img/hci.svg" alt="Human-Computer Interaction" class="w-7 h-7 text-black" />
+            </div>
+            <h6 class="mb-2 text-base text-black font-merri">Human-Computer Interaction</h6>
+            <p class="mb-3 text-base text-gray-500"> Enhancing user experiences through intuitive interfaces and thoughtful interaction design. </p>
+            <ul class="mb-4 -ml-1 space-y-2">
+              <li class="text-sm text-black flex items-start">
+                <span class="mr-1 text-black">
+                  <i class="fa-solid fa-check"></i>
+                </span> User Research
+              </li>
+              <li class="text-sm text-black flex items-start">
+                <span class="mr-1 text-black">
+                  <i class="fa-solid fa-check"></i>
+                </span> Usability Testing
+              </li>
+              <li class="text-sm text-black flex items-start">
+                <span class="mr-1 text-black">
+                  <i class="fa-solid fa-check"></i>
+                </span> Interaction Design
+              </li>
+            </ul>
+            <a href="/hci" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-black hover:text-zinc-800"> Learn More </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Site Content | Services section  Ends -->
+    <!-- Site Content | Potfolio section  -->
+    <section class="bg-white">
+      <div class="px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div class="max-w-xl mb-2 md:mx-auto sm:text-center lg:max-w-2xl md:mb-4">
+          <div>
+            <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-zinc-900 uppercase rounded-full bg-zinc-200"> Featured Projects </p>
+          </div>
+          <h2 class="max-w-lg mb-6 text-4xl font-semibold leading-none tracking-tight text-black sm:text-4xl md:mx-auto font-merri">
+            <span class="relative inline-block">
+              <div class="flex items-center justify-center w-12 h-12 rounded-full bg-zinc-200">
+                <img src="img/Presentation.svg" alt="Project Icon" />
+              </div>
+              <span class="relative">Explore</span>
+            </span> my impactful projects
+          </h2>
+          <p class="text-base text-gray-500 md:text-lg"> Discover how I’ve tackled real-world challenges with innovative solutions and crafted user-centric applications. </p>
+        </div>
+        <div class="relative px-4 pb-6 sm:px-6 lg:py-16 lg:px-8">
+          <div class="relative mx-auto max-w-7xl">
+            <div class="grid max-w-lg gap-5 mx-auto lg:grid-cols-3 lg:max-w-none">
+              <!-- Project 1 -->
+              <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+                <div class="flex-shrink-0">
+                  <img class="object-cover w-full h-48" src="https://images.unsplash.com/photo-1621111848501-8d3634f82336?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1565&q=80" alt="EventSphere" />
+                </div>
+                <div class="flex flex-col justify-between flex-1 p-6 bg-white">
+                  <div class="flex-1">
+                    <a href="#" class="block mt-2">
+                      <p class="text-xl font-semibold text-black font-merri"> EventSphere </p>
+                      <p class="mt-3 text-base text-gray-500"> A dynamic event management system designed to simplify scheduling, attendee management, and real-time notifications, enhancing user engagement. </p>
+                    </a>
+                  </div>
+                  <div class="flex items-center space-x-4">
+                    <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-black">
+                      <i class="fa-brands fa-github text-xl"></i>
+                    </a>
+                    <a href="/" class="text-gray-500 transition-colors text-right duration-300 hover:text-black"> Learn More <i class="fa-solid fa-right-long ml-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Project 2 -->
+              <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+                <div class="flex-shrink-0">
+                  <img class="object-cover w-full h-48" src="https://images.unsplash.com/photo-1621609764180-2ca554a9d6f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="Music Player" />
+                </div>
+                <div class="flex flex-col justify-between flex-1 p-6 bg-white">
+                  <div class="flex-1">
+                    <a href="#" class="block mt-2">
+                      <p class="text-xl font-semibold text-black font-merri"> Music Player </p>
+                      <p class="mt-3 text-base text-gray-500"> An intuitive music player app, featuring seamless track management and playback, designed to offer an exceptional listening experience. </p>
+                    </a>
+                  </div>
+                  <div class="flex items-center space-x-4">
+                    <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-black">
+                      <i class="fa-brands fa-github text-xl"></i>
+                    </a>
+                    <a href="/" class="text-gray-500 transition-colors text-right duration-300 hover:text-black"> Learn More <i class="fa-solid fa-right-long ml-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Project 3 -->
+              <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+                <div class="flex-shrink-0">
+                  <img class="object-cover w-full h-48" src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="School Management System UI" />
+                </div>
+                <div class="flex flex-col justify-between flex-1 p-6 bg-white">
+                  <div class="flex-1">
+                    <a href="#" class="block mt-2">
+                      <p class="text-xl font-semibold text-black font-merri"> School Management System UI </p>
+                      <p class="mt-3 text-base text-gray-500"> Crafted a user-friendly interface for a school management system, focusing on accessibility and enhancing user experience with intuitive design. </p>
+                    </a>
+                  </div>
+                  <div class="flex items-center space-x-4">
+                    <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-black">
+                      <i class="fa-brands fa-github text-xl"></i>
+                    </a>
+                    <a href="/" class="text-gray-500 transition-colors text-right duration-300 hover:text-black"> Learn More <i class="fa-solid fa-right-long ml-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Site Content | Portfolio section Ends -->
+    <!-- Site Content | Contact section  -->
+    <section class="py-14 bg-white">
+      <div class="max-w-screen-xl mx-auto px-4 text-zinc-800 gap-12 md:px-8 lg:flex">
+        <div class="max-w-md">
+          <h3 class="text-zinc-900 text-4xl font-semibold font-merri"> Let’s Connect and Create </h3>
+          <p class="mt-3 text-base text-gray-500"> Ready to collaborate on your next project or have a question about web development or design? I'm here to help! Reach out and let's turn your ideas into digital realities. </p>
+        </div>
+        <div>
+          <ul class="mt-12 gap-y-6 gap-x-12 items-center md:flex lg:gap-x-0 lg:mt-0">
+            <li class="space-y-3 border-t py-6 md:max-w-sm md:py-0 md:border-t-0 lg:border-l lg:px-12 lg:max-w-none">
+              <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-zinc-100">
+                <img src="img/Google-Mail.svg" alt="Web Development" class="w-7 h-7 text-black">
+              </div>
+              <h4 class="text-black text-base font-semibold xl:text-base font-merri"> Email Me </h4>
+              <p class="text-base text-gray-500">For inquiries, project discussions, or just a chat about technology, feel free to drop me an email. I’m always open to new opportunities and ideas!</p>
+              <a href="mailto:moses@example.com" class="flex items-center gap-1 text-sm text-black duration-150 hover:text-gray-700 font-medium"> Send an Email <i class="fas fa-arrow-right text-lg"></i>
+              </a>
+            </li>
+            <li class="space-y-3 border-t py-6 md:max-w-sm md:py-0 md:border-t-0 lg:border-l lg:px-12 lg:max-w-none">
+              <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-zinc-100">
+                <img src="img/Linkedin.svg" alt="Web Development" class="w-7 h-7 text-black">
+              </div>
+              <h4 class="text-black text-base font-semibold xl:text-base font-merri"> Connect on LinkedIn </h4>
+              <p class="text-base text-gray-500">Looking to network with fellow professionals or discuss potential collaborations? Connect with me on LinkedIn for insights and opportunities in web development and design.</p>
+              <a href="https://www.linkedin.com/in/moses-oni/" class="flex items-center gap-1 text-sm text-black duration-150 hover:text-gray-700 font-medium"> Visit My Profile <i class="fas fa-arrow-right text-lg"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Site Content | Contact section Ends -->
+    <!-- Site Content | Footer section  -->
+    <footer class="bg-black text-white dark:bg-gray-900 dark:text-gray-300">
+      <div class="container flex flex-col items-center justify-between p-6 mx-auto space-y-4 sm:space-y-0 sm:flex-row">
+        <a href="#">
+          <img class="w-auto h-7" src="img/logo-w.svg" alt="">
+        </a>
+        <p class="text-sm text-gray-500">© Copyright 2024. All Rights Reserved.</p>
+        <div class="flex -mx-2">
+          <a href="#" class="mx-2 text-white transition-colors duration-300 hover:text-zinc-500" aria-label="Reddit">
+            <i class="fab fa-reddit w-5 h-5"></i>
+          </a>
+          <a href="#" class="mx-2 text-white transition-colors duration-300 hover:text-zinc-500" aria-label="Facebook">
+            <i class="fab fa-facebook w-5 h-5"></i>
+          </a>
+          <a href="#" class="mx-2 text-white transition-colors duration-300 hover:text-zinc-500" aria-label="Github">
+            <i class="fab fa-github w-5 h-5"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Site Content | Footer section Ends -->
+    <!-- Theme Toggle Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const menuButton = document.querySelector('[data-collapse-toggle="mobile-menu-2"]');
+        const mobileMenu = document.getElementById("mobile-menu-2");
+        const openMenuIcon = document.getElementById("open-menu");
+        const closeMenuIcon = document.getElementById("close-menu");
+        // Initially hide the close icon
+        closeMenuIcon.style.display = "none";
+        menuButton.addEventListener("click", function() {
+          // Toggle menu visibility
+          mobileMenu.classList.toggle("hidden");
+          // Toggle icons between open and close
+          if (mobileMenu.classList.contains("hidden")) {
+            openMenuIcon.style.display = "block";
+            closeMenuIcon.style.display = "none";
+          } else {
+            openMenuIcon.style.display = "none";
+            closeMenuIcon.style.display = "block";
+          }
+        });
+      });
+    </script>
+    <!-- TW Elements JS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
+    <!-- Font Awesome JS Script -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  </body>
+</html>
